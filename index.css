@@ -66,6 +66,7 @@ i {
   transform: rotate(-45deg);
   box-shadow: -10px 10px 90px #f20044;
   animation: heart 0.6s linear infinite alternate;
+  z-index: 1;
 }
 
 @keyframes heart{
@@ -96,17 +97,28 @@ i {
   box-shadow: 10px 10px 90px #f20044;
 }
 
-.rotation {
-  width: 120px;
-  height: 6px;
-  background: yellow;
+#orbitOne{
+  width: 80px;
+  height: 140px;
   position: absolute;
-  top: 27%;
-  right: 14%;
-  border: solid 1px black;
-  border-radius: 30%;
+  top: 60px;
+  left: 65px;
   transform-style: preserve-3d;
-  transform: rotateX(65deg);
+  transform: rotateX(85deg);
+  border-radius: 50%;
+  animation: rt1 4000ms linear infinite;
+  box-shadow: 0px 0px 30px yellow;;
+}
+
+@keyframes rt1 {
+  from{
+      transform: rotateX(90deg) rotateZ(90deg);
+      
+  }
+  to{
+      transform: rotateX(45deg) rotateZ(900deg); 
+     
+  } 
 }
 
 #tarjetaCarrusel-1 {
