@@ -19,9 +19,9 @@ i {
 #carruselContainer {
   overflow: hidden;
   width: 680px;
-  height: 440px;
+  height: 520px;
   margin: 0 auto;
-  margin-top: 66px;
+  margin-top: 26px;
 }
 
 .itemCarrusel {
@@ -57,10 +57,10 @@ i {
 }
 
 .heart {
-  width: 55px;
-  height: 55px;
+  width: 60px;
+  height: 60px;
   position: relative;
-  bottom: 340px;
+  bottom: 400px;
   left: 500px;
   background: #f20044;
   transform: rotate(-45deg);
@@ -78,8 +78,8 @@ i {
 .heart::before {
   content: "";
   position: absolute;
-  height: 55px;
-  width: 55px;
+  height: 60px;
+  width: 60px;
   top: -50%;
   background: #f20044;
   border-radius: 50px;
@@ -89,8 +89,8 @@ i {
 .heart::after {
   content: "";
   position: absolute;
-  height: 55px;
-  width: 55px;
+  height: 60px;
+  width: 60px;
   right: -50%;
   background: #f20044;
   border-radius: 50px;
@@ -99,10 +99,10 @@ i {
 
 #orbitOne{
   width: 80px;
-  height: 140px;
+  height: 150px;
   position: absolute;
-  top: 60px;
-  left: 65px;
+  top: 66px;
+  right: 112px;
   transform-style: preserve-3d;
   transform: rotateX(85deg);
   border-radius: 50%;
@@ -111,14 +111,19 @@ i {
 }
 
 @keyframes rt1 {
-  from{
-      transform: rotateX(90deg) rotateZ(90deg);
+  0%{
+      transform: rotateX(180deg) rotateZ(240deg);
       
   }
-  to{
-      transform: rotateX(45deg) rotateZ(900deg); 
+  50%{
+      transform: rotateX(240deg) rotateZ(90deg); 
      
   } 
+
+  100%{
+    transform: rotateX(180deg) rotateZ(240deg);
+    
+}
 }
 
 #tarjetaCarrusel-1 {
